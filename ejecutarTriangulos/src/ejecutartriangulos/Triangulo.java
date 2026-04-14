@@ -14,6 +14,12 @@ public class Triangulo {
     private double area;
     private double altura;
     private double base;
+    private double perimetro;
+    private double lUno;
+    private double lDos;
+    private double lTres;
+    
+    
     // get y set
     // al area no necesito el set porque no vamos a preguntar sino guardar
 
@@ -45,5 +51,33 @@ public class Triangulo {
     public void setArea(double area) {
         this.area = area;
 
+    }
+
+    public double getlUno() {
+        return lUno;
+    }
+
+    public void setlUno(double lUno) {
+        this.lUno = lUno;
+    }
+
+    public double getlDos() {
+        return lDos;
+    }
+
+    public void setlDos(double lDos) {
+        this.lDos = lDos;
+    }
+
+    public double getlTres() {
+        return lTres;
+    }
+
+    public void setlTres(double lTres) {
+        this.lTres = lTres;
+    }
+    
+     public double getPerimetro() {
+        return (lUno + lDos + lTres);
     }
 }

@@ -25,14 +25,25 @@ public class EjecutarTriangulos {
         double base = entrada.nextDouble();
         System.out.println("Ingrese la altura");
         double altura = entrada.nextDouble();
+         System.out.println("Ingrese el lado uno");
+        double Luno = entrada.nextDouble();
+         System.out.println("Ingrese el lado dos");
+        double ldos = entrada.nextDouble();
+        System.out.println("Ingrese el lado tres");
+        double ltres = entrada.nextDouble();
         // enviar datos al objeto
         objUno.setBase(base);
         objUno.setAltura(altura);
+        objUno.setlUno(Luno);
+        objUno.setlDos(ldos);
+        objUno.setlTres(ltres);
         // invocar a metodo para calcular el area
         double area = objUno.calcularArea();
         objUno.setArea(area);
         // imprimir los valores
-        System.out.println("El area de un triangulo es = " + objUno.getArea());
+        System.out.println("El area de un triangulo, con base = " + 
+                objUno.getBase() + "y altura"+  objUno.getAltura()+ "es = " + 
+                objUno.getArea() + "area");
         // objeto dos
          Triangulo objDos = new Triangulo();
          
