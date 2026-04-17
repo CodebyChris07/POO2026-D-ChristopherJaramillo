@@ -11,6 +11,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 
+
 /**
  *
  * @author ASUS
@@ -40,7 +41,7 @@ public class ArchivosBuffer {
             }
 
         } catch (IOException e) {
-            System.out.println("Error al leer archivo");
+            System.out.println("Error en escribir archivo");
         }
     }
 
