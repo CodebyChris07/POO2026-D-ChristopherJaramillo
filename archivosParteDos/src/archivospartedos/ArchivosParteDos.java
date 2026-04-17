@@ -36,5 +36,45 @@ public class ArchivosParteDos {
         } catch (IOException e) {
             System.out.println("Error");
         }
+        try (FileOutputStream fos = new FileOutputStream(myfile, true)) {
+            String data = " Esto es un archivo usando stream \n";
+            byte b[] = data.getBytes();// trabaja con bytes y no con texto puro,
+                                      // conviertes el String en un arreglo de bytes
+                                      
+            fos.write(b); // Enviamos el arreglo de bytes al archivo a través del stream
+            
+            fos.close(); // cerramos el flujo manualmente 
+            System.out.println("Se ha escrito en el archivo.");
+        } catch (IOException e) {
+            System.out.println("Error de escritura.");
+        }
+        try (FileInputStream fis = new FileInputStream(myfile)) {
+            int i;
+            while ((i = fis.read()) != -1) { // lee el siguiente byte del archivo.
+                                            // Cuando llega al final del archivo y 
+                                            // ya no hay nada más que leer, devuelve -1. 
+                                            // Por eso el ciclo se repite mientras i no sea -1.
+                System.out.println((char) i);// Aqui imprimimos la varibale una vez salida del
+                                            // bucle 
+
+            }
+        } catch (IOException e) {
+            System.out.println("Error de escritura");
+
+        }
+        try (FileInputStream fis = new FileInputStream(myfile)) {// creamos un input y le damos
+                                                                 // los parametros de myfile
+            int i;
+            while ((i = fis.read()) != -1) { //entramos en un ciclo donde leemos la variable i
+                                             // y se va a leer hasta que ya no quede nd y se le
+                                             // asigna el valor de -1
+                System.out.print((char) i);
+
+            }
+
+        } catch (IOException e) {
+            System.out.println("Error de lectura");
+
+        }
     }
 }
