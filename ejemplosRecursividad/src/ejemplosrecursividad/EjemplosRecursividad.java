@@ -30,6 +30,13 @@ public class EjemplosRecursividad {
         int s2 = entrada.nextInt();
         int suma23 = suma2(s1, s2);
         System.out.println(m + "\n" + s + "\n" + suma23);
+        entrada.nextLine();// limpieza de buffer
+        System.out.println("Ingrese un palabra");
+        String palabra = entrada.nextLine();
+        char[] l = palabra.toCharArray();
+        
+       
+        
 
     }
 
@@ -69,6 +76,17 @@ public class EjemplosRecursividad {
 
         }
 
+    }
+    public static boolean palindromo(char[] letras, int inicio, int fin){
+    if(inicio >= fin){
+    return true;
+    }
+    if(letras[inicio] != letras[fin]){
+    
+    return  false;
+    }
+    
+    return palindromo(letras, inicio + 1, fin -1);
     }
 
 }
