@@ -13,7 +13,8 @@ public class Humano {
     private String nombres;
     private int edad;
     private Corazon c;
-    
+    private Ropa r;
+    private Pulmon p;
     
     public String getCedula(){
     return cedula;
@@ -45,5 +46,23 @@ public class Humano {
     public void setC(Corazon c) {
         this.c = c;
     }
+
+    public Ropa getR() {
+        return r;
+    }
+
+    public void setR(Ropa r) {
+        this.r = r;
+    }
+
+    public Pulmon getP() {
+        return p;
+    }
+
+    public void setP(Pulmon p) {
+        this.p = p;
+    }
+
+   
     
 }
