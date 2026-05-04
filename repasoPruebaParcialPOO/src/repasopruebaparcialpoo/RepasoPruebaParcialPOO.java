@@ -48,7 +48,7 @@ public class RepasoPruebaParcialPOO {
                     + " autos en este mes y su pago mensual es " + ven.getPagoMensual());
             entrada.nextLine(); // limpieza de buffer
             System.out.println("Quiere seguir calculando el salario del vendedor, presione S o N");
-            op = entrada.toString();
+            op = entrada.nextLine();
             if (op.equals("N")) {
                 opcion = false;
 
