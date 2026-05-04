@@ -22,6 +22,7 @@ public class RepasosDeArreglos {
         System.out.println("Ingrese el tamano del arreglo");
         int tamanio = entrada.nextInt();
         int[] numeros = new int[tamanio];
+
         for (int i = 0; i < tamanio; i++) {
             System.out.println("Ingrese un numero para la posicion [" + i + "]");
             numeros[i] = entrada.nextInt();
@@ -38,6 +39,7 @@ public class RepasosDeArreglos {
 
                 } else {
                     String dato = "NUMEROS IMPARES" + num + "\n";
+		    bos.write(b);
                 }
             }
             System.out.println("Archivo guardado con éxito.");
