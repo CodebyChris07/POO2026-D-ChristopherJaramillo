@@ -21,10 +21,14 @@ public class ArregloMatrices {
 
         leerArreglo(matriz);
         print2D(matriz);
+        
+
         diagonalPrincipal(matriz);
         diagonalSecundaria(matriz);
         transpuesta(matriz);
         resultante();
+        
+        repaso(matriz);
 
         //  matriz[2][2] = 2;
     }
@@ -103,6 +107,27 @@ public class ArregloMatrices {
             System.out.println();
         }
 
+    }
+
+    public static void repaso(int[][] m) {
+        
+       
+        
+
+        // diagonal principal pero los demas terminos en 0
+        /*
+        int[][] b = new int[3][3];
+        for (int i = 0; i < m.length; i++) {
+            b[i][i] = m[i][i];
+
+        }
+        for (int i = 0; i < b.length; i++) {
+            for (int j = 0; j < b[i].length; j++) {
+                System.out.print(b[i][j] + "\t");
+            }
+            System.out.println();
+        }
+         */
     }
 
 }

@@ -45,7 +45,7 @@ public class Problema4 {
 
     public static void presentar(String[][] m) {
         System.out.println("--------- DATOS ENCUESTA ---------");
-        System.out.println("EDAD\tDONDE VIVE\tTIPO MUSICA\tEVENTOS");
+        System.out.println("EDAD\tLOJA\tTIPO MUSICA\tEVENTOS");
         for (int i = 0; i < m.length; i++) {
             System.out.println(m[i][0] + "\t" + m[i][1] + "\t" + m[i][2] + "\t"
                     + m[i][3] + "\t");
