@@ -14,7 +14,7 @@ import java.util.ArrayList;
  */
 public class GestorPadelBinario {
 
-    private String rutaArchivo = "C:\\Users\\ASUS\\Desktop\\partidos.txt";
+    private String rutaArchivo = "C:\\Users\\ASUS\\Desktop\\partidos.dat";
 
     public void guardarPartidos(ArrayList<PartidoPadel> lista) {
         try (ObjectOutputStream salida = new ObjectOutputStream(new FileOutputStream(rutaArchivo))) {
