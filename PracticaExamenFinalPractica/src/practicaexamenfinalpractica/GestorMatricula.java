@@ -12,15 +12,16 @@ import java.util.ArrayList;
  */
 public class GestorMatricula {
 
-    private ArrayList<Estudiante> listaEstudiantes; // temer en cuenta esto <> sirve para el for
+    private ArrayList<Estudiante> listaEstudiantes; // tener en cuenta esto <> sirve para el for
 
     public GestorMatricula() {
-        this.listaEstudiantes = new ArrayList<>();
+        this.listaEstudiantes = new ArrayList<>(); // importante
     }
 
     public void registrarEstudiante(Estudiante e) {
 
         boolean bandera = false;
+        
         for (Estudiante alumnoGuardado : listaEstudiantes) {
             if (e.getCedula().equals(alumnoGuardado.getCedula())) {
                 bandera = true;
