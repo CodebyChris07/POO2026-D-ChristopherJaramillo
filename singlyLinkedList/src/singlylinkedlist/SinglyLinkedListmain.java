@@ -23,6 +23,12 @@ public class SinglyLinkedListmain {
         list.mostrar(list);
         list.insetInicio(list, 10);
         list.mostrar(list);
+        list.delete(8);
+        list.mostrar(list);
+        list.buscar(20);
+        
+        
+        
         
     }
     

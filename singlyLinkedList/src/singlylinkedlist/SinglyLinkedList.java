@@ -72,4 +72,47 @@ public class SinglyLinkedList {
 
     }
 
+    public void delete(int key) {
+        if (head == null) {
+            System.out.println(key + " no encontrado");
+            return;
+
+        }
+        Node currNode = head;
+        Node prev = null;
+        while (currNode != null && currNode.data != key) {
+            prev = currNode;
+            currNode = currNode.next;
+        }
+        if (currNode == null) {
+            System.out.println(key + " no encontrado");
+            return;
+
+        }
+        if (prev == null) {
+            head = currNode.next;
+        } else {
+            prev.next = currNode.next;
+        }
+        currNode.next = null;
+        System.out.println(key + " encontrado y eliminado");
+
+    }
+
+    public void buscar(int dato) {
+        if (head == null) {
+            System.out.println("Lista vacia");
+            return;
+        }
+        Node currNode = head;
+        while (currNode != null && currNode.data != dato) {
+            currNode = currNode.next;
+        }
+        if (currNode == null) {
+            System.out.println(dato + " no encontrado");
+            return;
+        }
+        System.out.println(dato + " encontrado");
+    }
+
 }
