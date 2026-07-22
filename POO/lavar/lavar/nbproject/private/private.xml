@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Util/ConexionSQLite.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Modelo/Lavado.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Modelo/LavadoBasico.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Modelo/LavadoCompleto.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Modelo/LavadoPremium.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Controlador/LavadoDAO.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/Vista/VistaLavado.java</file>
+            <file>file:/Users/xavicrip/NetBeansProjects/POO25/Recuperacion/lavar/src/lavar/Lavar.java</file>
+        </group>
+    </open-files>
+</project-private>
